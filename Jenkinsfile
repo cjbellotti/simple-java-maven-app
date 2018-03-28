@@ -2,7 +2,6 @@ pipeline {
 	agent {
 		docker {
 			image 'maven:3-alpine'
-			args '
 			args '-v $HOME/.m2:/root/.m2 -v /var/run/docker.sock:/var/run/docker.sock'
 		}
 	}
